@@ -47,7 +47,7 @@ export default function Testimonials() {
         {testimonials.map((t) => (
           <SwiperSlide key={t.id}>
             <div className={styles.card}>
-              <p className={styles.comment}>"{t.comment}"</p>
+              <p className={styles.comment}>{t.comment}</p>
               <p className={styles.name}>– {t.name}</p>
             </div>
           </SwiperSlide>
