@@ -1,21 +1,19 @@
 
 
-import Image from "next/image";
+import HeroSection from "./components/herosection/HeroSection";
+import ProductGrid from "./components/productgrid/ProductGrid";
 import styles from "./page.module.css";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
 
 export default function Home() {
-
-
- return (
-    <div className={styles.page}>
-      <div className={styles.ctas}>
-        {/* Your content */}
-      </div>
-    </div>
-
-
-      
+  return (
+    <>
+      <HeroSection />
+      <main className={styles.main}>
+        <div className={styles.ctas}>
+          {/* You can add calls to action or other sections here */}
+           <ProductGrid />
+        </div>
+      </main>
+    </>
   );
 }
