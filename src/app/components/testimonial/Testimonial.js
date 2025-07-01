@@ -23,7 +23,19 @@ const testimonials = [
     name: "Raju Mizar.",
     comment: "Best grapes in the whole area. Great quality!",
   }
-];
+  ,
+  {
+    id: 4,
+    name: "Sourav",
+    comment: "Often visit them, they have the best local fruits. The start-fruits are a must-try!",
+  }
+    ,
+    {
+        id: 5,
+        name: "Gajanad Kashat",
+        comment: "All puja samagries are available here. The owner is very helpful and friendly, he helped me find all the items I needed for the puja. Thank you!",
+    },
+    ];
 
 export default function Testimonials() {
   return (
