@@ -1,0 +1,28 @@
+
+.mapSection {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #228B22;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.address {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 1rem;
+}
