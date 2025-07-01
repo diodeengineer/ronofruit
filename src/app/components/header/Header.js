@@ -24,7 +24,7 @@ export default function Header() {
         </button>
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
           <Link className={styles.navLink} href="/">Home</Link>
-          <Link className={styles.navLink} href="/products">Products</Link>
+          <Link className={styles.navLink} href="#products">Products</Link>
           <Link className={styles.navLink} href="/about">About</Link>
           <Link className={styles.navLink} href="/contact">Contact</Link>
         </nav>
