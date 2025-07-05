@@ -1,5 +1,3 @@
-
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/Header";
@@ -17,7 +15,24 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Rono Fruit Stall",
-  description: "Fresh fruits delivered to your door",
+  description: "Rono Fruit Stall - Fresh and seasonal fruits available locally. Visit us or explore our products online.",
+  keywords: "Rono Fruit Stall, fresh fruits, seasonal fruits, fruit shop",
+  openGraph: {
+    title: "Rono Fruit Stall",
+    description: "Rono Fruit Stall offers a wide variety of fresh, seasonal fruits. Check our selection and learn more about us.",
+    url: "https://ronofruit.vercel.app",
+    siteName: "Rono Fruit Stall",
+    // images: [
+    //   {
+    //     url: "https://ronofruit.vercel.app/og-banner.jpg", // Update if you have an image
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Rono Fruit Stall - Fresh and Seasonal Fruits",
+    //   },
+    // ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
