@@ -39,33 +39,35 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className={styles.testimonialsSection}>
-      <h2 className={styles.heading}>What Our Customers Say</h2>
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        spaceBetween={20}
-        slidesPerView={1}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
-      >
-        {testimonials.map((t) => (
-          <SwiperSlide key={t.id}>
-            <div className={styles.card}>
-              <p className={styles.comment}>{t.comment}</p>
-              <p className={styles.name}>– {t.name}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
+
+  <section className={styles.testimonialsSection}>
+  <h2 className={styles.heading}>What Our Customers Say</h2>
+  <div style={{ width: "100%", maxWidth: "1200px", margin: "0 auto" }}>
+    <Swiper
+      modules={[Autoplay, Pagination]}
+      spaceBetween={20}
+      slidesPerView={1}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      pagination={{ clickable: true }}
+      breakpoints={{
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }}
+      style={{ paddingBottom: "2rem" }} // Extra space for pagination dots
+    >
+      {testimonials.map((t) => (
+        <SwiperSlide key={t.id} style={{ height: "auto" }}>
+          <div className={styles.card}>
+            <p className={styles.comment}>{t.comment}</p>
+            <p className={styles.name}>– {t.name}</p>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
+
+    
   );
 }
 

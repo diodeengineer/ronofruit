@@ -3,6 +3,7 @@
 import ChatBotClient from "./components/chatbot/Chatbot";
 import HeroSection from "./components/herosection/HeroSection";
 import LocationMap from "./components/locationmap/LocationMap";
+import Newsletter from "./components/newsletter/Newsletter";
 import ProductGrid from "./components/productgrid/ProductGrid";
 import Testimonials from "./components/testimonial/Testimonial";
 import styles from "./page.module.css";
@@ -17,7 +18,8 @@ export default function Home() {
       <main className={styles.main}>
         <ProductGrid />
         <Testimonials />
-        <LocationMap />
+        {/* <LocationMap /> */}
+        <Newsletter />
       </main>
     </>
   );
