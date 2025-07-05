@@ -33,7 +33,11 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+  verification: {
+    google: "e822ab07b7b9671f"
+  }
 };
+
 
 export default function RootLayout({ children }) {
   return (
