@@ -56,7 +56,7 @@ export default function Testimonials() {
       style={{ paddingBottom: "2rem" }} // Extra space for pagination dots
     >
       {testimonials.map((t) => (
-        <SwiperSlide key={t.id} style={{ height: "auto" }}>
+        <SwiperSlide key={t.id} style={{ height: "auto" ,width: "100%", boxSizing: "border-box"}}>
           <div className={styles.card}>
             <p className={styles.comment}>{t.comment}</p>
             <p className={styles.name}>– {t.name}</p>
