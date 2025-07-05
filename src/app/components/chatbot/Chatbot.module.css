@@ -1,4 +1,11 @@
 
+.fruitbot {
+  font-size: 1.2rem;
+  color: #088b19;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
 .chatButton {
   position: fixed;
   bottom: 20px;
@@ -104,4 +111,54 @@
 .sendButton:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .chatContainer {
+    width: 90vw;
+    right: 5vw;
+    bottom: 80px;
+    max-height: 80vh;
+  }
+
+  .chatBox {
+    height: 50vh;
+    padding: 0.5rem;
+  }
+
+  .inputForm {
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.3rem;
+  }
+
+  .inputBox {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .sendButton {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .chatButton {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .bubble {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    max-width: 90%;
+  }
+
+  .closeButton {
+    font-size: 18px;
+    padding: 0.2rem 0.3rem;
+  }
 }

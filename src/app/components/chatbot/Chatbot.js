@@ -63,7 +63,7 @@ export default function ChatBotClient() {
       {isOpen && (
         <div className={styles.chatContainer}>
           <div style={{ display: "flex", alignItems: "center", padding: "0.5rem" }}>
-            <strong>FruitBot</strong>
+            <strong className={styles.fruitbot}>FruitBot</strong>
             <button
               className={styles.closeButton}
               onClick={() => setIsOpen(false)}
