@@ -1,8 +1,10 @@
 
+
+
 .mapSection {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
 }
 
 .heading {
@@ -13,16 +15,40 @@
 
 .mapContainer {
   width: 100%;
-  max-width: 1000px;
-  height: 400px;
+  max-width: 1200px;
+  height: 51vh; /* dynamic height relative to screen */
+  /* min-height: 400px; */
   margin: 0 auto;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: relative;
+  background-color: #333;
 }
 
 .address {
   margin-top: 1rem;
   color: #333;
   font-size: 1rem;
+}
+
+.directionsButton {
+  display: inline-block;
+  margin-top: -1px;
+  padding: 0.75rem 1.5rem;
+  background-color: #228B22;
+  color: #fff;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.directionsButton:hover {
+  background-color: #1a6b1a;
+}
+
+
+.iframe{
+    margin-top: 5rem;
 }
